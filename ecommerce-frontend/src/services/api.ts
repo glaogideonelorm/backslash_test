@@ -1,7 +1,9 @@
-import axios from 'axios'
+import axios from 'axios';
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://backslashtest-production.up.railway.app';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000'
-})
+  baseURL: API_BASE_URL
+});
 
-export default api
+export default api;
