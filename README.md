@@ -1,11 +1,10 @@
-Below is an example `README.md` file that documents the project, setup instructions, and details on our approach:
 
 ---
 
 ```markdown
 # E-Commerce Cart System
 
-A simple full-stack e-commerce cart system that allows users to browse products and manage their shopping cart. This project demonstrates API integration, state management with Redux, and responsive UI design.
+A simple full-stack e-commerce cart system that allows users to browse products and manage their shopping cart. 
 
 ## Table of Contents
 
@@ -151,6 +150,7 @@ ecommerce-frontend/
   Push your backend code to a Git repository (e.g., GitHub) and connect it to [Railway](https://railway.app). Railway will build and deploy your Node.js application.
 - **Data:**  
   Data is stored locally in JSON files within the project. Note that Railway's file system is ephemeral; consider using a database for persistent data storage in a production environment.
+  Future changes would be made to make data persistent
 
 ### Frontend (Netlify)
 - **Deploying:**  
@@ -161,10 +161,10 @@ ecommerce-frontend/
 ## Approach and Notes
 
 - **Backend Approach:**  
-  The backend is built using Express. Data is read from local JSON files to simulate a database, and basic CRUD operations are provided for product and cart management.
+  The backend is simple using node.js and express and storing data in a json file such that it is not persistent, CRUD operations apply 
   
 - **Frontend Approach:**  
-  The frontend is built with React and TypeScript, using Vite for fast development and hot module replacement. Axios handles API calls, while Redux Toolkit manages the shopping cart state. The application is designed with responsive CSS to ensure it looks good on various devices.
+  The frontend is built with React and TypeScript, using Vite since it is not a multipage website and does not need complex routing. Axios handles API calls, while Redux Toolkit manages the shopping cart state. The application is designed with responsive CSS to ensure it looks good on various devices.
 
 - **State Management:**  
   Redux Toolkit simplifies state management, reducing boilerplate code. Custom hooks (`useAppDispatch` and `useAppSelector`) help integrate Redux with React components.
@@ -186,10 +186,3 @@ ecommerce-frontend/
   Improve error handling and loading states in the frontend.
 
 ---
-
-Feel free to contribute or open issues if you have suggestions or find any bugs!
-```
-
----
-
-This `README.md` provides a comprehensive guide to understanding, setting up, and deploying the application, along with insights into our design decisions and potential future enhancements.
